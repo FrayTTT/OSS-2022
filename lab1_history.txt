@@ -104,7 +104,7 @@
   104  cat apple
   105  move lion ~/animals/
   106  mv lion ~/animals/
-  107  cp pineaple pineapple
+  107  mv pineaple pineapple
   108  man wc
   109  wc -l /etc/passwd
   110  cd ~
@@ -168,7 +168,7 @@
   168  curl wttr.in
   169  hostname -I
   170  curl ifconfig.me
-  171  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md и
+  171  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
   172  less
   173  sudo -i
   174  sudo id
