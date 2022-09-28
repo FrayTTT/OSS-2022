@@ -1,3 +1,13 @@
+    drw-rw-r--. 2 nikita nikita 22 сен 28 16:30 dir
+----r-----. 1 root   nikita  5 сен 28 16:24 file
+-rw-------. 1 nikita nikita  0 сен 28 16:39 file1
+-rw-rw-rw-. 1 nikita nikita  0 сен 28 16:40 file_2
+
+./dir:
+ls: невозможно получить доступ к './dir/new_file': Отказано в доступе
+итого 0
+-????????? ? ? ? ?            ? new_file
+    
     1  cd ~
     2  mkdir test
     3  cd test
