@@ -1,0 +1,58 @@
+    1  cd ~
+    2  mkdir test
+    3  cd test
+    4  man chmod
+    5  man touch
+    6  touch file
+    7  ls -l file
+    8  chmode 000 file
+    9  chmod 000 file
+   10  ls -l file
+   11  echo "Test" > file
+   12  cat file
+   13  chmod 100 file
+   14  ls -l file
+   15  chmod 200 file
+   16  ls -l file
+   17  ll file
+   18  cat file
+   19  chmod 340 file
+   20  ls - file
+   21  ls -l file
+   22  man chmod
+   23  chmod 640 file
+   24  ls -l file
+   25  cat file
+   26  mkdir 
+   27  mkdir dir
+   28  cat>dir/new_file
+   29  ls
+   30  ls dir
+   31  rm dir/new_file 
+   32  cat>dir/new_file
+   33  cd dir
+   34  ls
+   35  cd ../
+   36  ls
+   37  chmod 666 dir
+   38  ls dir
+   39  rm dir/new_file 
+   40  ll dir
+   41  man chown
+   42  man chgrp
+   43  chown root file
+   44  chgrp root file
+   45  ls
+   46  umast 177
+   47  umask 177
+   48  touch file1
+   49  ll file1
+   50  umask 111
+   51  touch file_2
+   52  ll file_2
+   53  cat file
+   54  ls -lR
+   55  chmode 664 dir
+   56  chmod 664 dir
+   57  ls
+   58  ls -lR | history > ~/Документы/lab2_history.txt
