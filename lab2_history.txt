@@ -8,6 +8,20 @@ ls: невозможно получить доступ к './dir/new_file': От
 итого 0
 -????????? ? ? ? ?            ? new_file
 
+
+.:
+итого 8
+drw-r--r-- 2 nikita nikita 4096 окт 17 15:42 dir
+-r--r----- 1 root   nikita    5 окт 17 15:37 file
+-rw------- 1 nikita nikita    0 окт 17 16:09 file1
+-rw-rw-rw- 1 nikita nikita    0 окт 17 16:11 file_2
+-rw-rw-rw- 1 nikita nikita    0 окт 17 16:17 lab2_history.txt
+
+./dir:
+ls: cannot access './dir/new_file': Permission denied
+итого 0
+-????????? ? ? ? ?            ? new_file
+
     1  cd ~
     2  mkdir test
     3  cd test
