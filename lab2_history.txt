@@ -1,7 +1,7 @@
 drw-rw-r--. 2 nikita nikita 22 сен 28 16:30 dir
 ----r-----. 1 root   nikita  5 сен 28 16:24 file
 -rw-------. 1 nikita nikita  0 сен 28 16:39 file1
--rw-rw-rw-. 1 nikita nikita  0 сен 28 16:40 file_2
+-rw-rw-rw-. 1 nikita nikita  0 сен 28 16:40 file2
 
 ./dir:
 ls: невозможно получить доступ к './dir/new_file': Отказано в доступе
@@ -72,8 +72,8 @@ ls: cannot access './dir/new_file': Permission denied
    48  touch file1
    49  ll file1
    50  umask 111
-   51  touch file_2
-   52  ll file_2
+   51  touch file2
+   52  ll file2
    53  cat file
    54  ls -lR
    55  chmode 664 dir
