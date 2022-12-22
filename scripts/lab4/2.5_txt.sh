@@ -1,6 +1,5 @@
 #!/bin/bash
-
-find ~ -name ".txt" > /tmp/temp.txt 2>/dev/null
-cat /tmp/temp.txt | wc -l
-du -h /tmp/temp.txt | cut -f1
-rm /tmp/temp.txt
+find ~ -type f -name "*.txt" > /tmp/tmp.txt
+cat /tmp/tmp.txt | xargs du -bc 2>/dev/null | tail -1 | cut -f1
+cat /tmp/tmp.txt  | xargs wc -l 2>/dev/null | tail -1 | awk '{print $1}'
+rm /tmp/tmp.txt
