@@ -1,5 +1,7 @@
-drw-rw-r--. 2 nikita nikita 22 сен 28 16:30 dir
-----r-----. 1 root   nikita  5 сен 28 16:24 file
+.:
+итого 4
+drw-rwxr-x. 2 nikita nikita 22 сен 28 16:30 dir
+-rw-r-----. 1 root   nikita  5 сен 28 16:24 file
 -rw-------. 1 nikita nikita  0 сен 28 16:39 file1
 -rw-rw-rw-. 1 nikita nikita  0 сен 28 16:40 file2
 
