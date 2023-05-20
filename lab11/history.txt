@@ -1,0 +1,29 @@
+10361  aureport --file -ts today -i --summary\n
+10362  sudo aureport --file -ts today -i --summary\n
+10363  cd ..
+10364  mkcd lab11
+10365  ls
+10366  echo "Hello world" > file1
+10367  auditctl -D
+10368  sudo auditctl -D
+10369  sudo auditctl -w /home/user1/file1 -p war -k user1_file1
+10370  sudo auditctl -w ./file1 -p war -k user1_file1
+10371  sudo auditctl -w ~/university/oss-2022-2023/labs/lab11/file1 -p war -k user1_file1
+10372  sudo auditctl -l
+10373  cat file1 
+10374  chmod 600 file1 
+10375  aureport --file -ts today -i --summary
+10376  sudo aureport --file -ts today -i --summary
+10377  aureport --file -ts recent 
+10378  sudo aureport --file -ts recent 
+10379  sudo ausearch -a 13053
+10380  sudo ausearch -a 2
+10381  sudo aureport\n
+10382  sudo aureport --auth -ts recent
+10383  aureport --user -ts recent -i\n
+10384  ausearch --uid 1000 -ts recent
+10385* history --help
+10386* history -h
+10387* man history
+10388* history -n 20
+10389  history -20
