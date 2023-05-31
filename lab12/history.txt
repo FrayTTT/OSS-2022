@@ -1,0 +1,69 @@
+cd myrepo/
+ls
+cd ..
+ls
+ldd /bin/ls | grep selinux
+ls -l /etc/selinux/
+ls -l /etc/selinux/targeted/
+id -Z
+ls -Z /etc/passwd /etc/group /etc/shadow
+ls -Z /etc/login.defs /etc/sudoers
+ls -1Z /usr/bin/passwd 
+ls -1Z /etc/passwd /etc/group /etc/shadow
+ls -Z /usr/sbin/useradd
+getfattr -n security.selinux /etc/passwd
+sudo yum install xattr
+sudo vim /etc/yum.repos.d/my.repo 
+sudo yum install xattr
+sudo yum install attr
+getfattr -n security.selinux /etc/passwd
+ps Zaux
+ls /proc/$$/attr
+ps Z $(pgrep passwd)
+sudo netstat -tnlpZ 
+sudo yum install -y netstat
+sudo yum install -y net-tools
+sestatus
+getsebool -a | grep httpd
+seinfo 
+sudo yum install setools-console
+seinfo
+seinfo -cfile -x
+for i in $(seinfo --class | grep file); do echo "----"; seinfo --class $i -x; done
+seinfo -class dir -x
+seinfo --class dir -x
+grep 'httpd_.*_t' /etc/selinux/targeted/contexts/files/file_contexts
+semanage fcontext -l
+sudo semanage fcontext -l
+cd mephi-oss-2022-2023/labs/lab12
+mkdir -p mephi-oss-2022-2023/labs/lab12
+cd mephi-oss-2022-2023/labs/lab12
+touch test_file
+ls -Z test_file 
+mount --help
+mount --help | grep -E '(def)?contex'
+mount --help | grep -E 'context'
+mount --help | grep 'context'
+man mount
+chcon --help 
+chcon -t httpd_sys_content_t test_file 
+ls -Z
+touch test_file_2
+chcon --reference test_file test_file_2 
+ls -Z
+sudo semanage fcontext -l
+sudo semanage fcontext -a -t sshd_key_t '/data/keys/*.*'
+sudo restorecon -r /data/keys
+sesearch -T -s httpd_t -t var_log_t
+sesearch -T -s httpd_t -t tmp_t
+sesearch --allow --source passwd_t --target shadow_t --class file
+sesearch -A -s passwd_t -t passwd_exec_t -c file
+sesearch -A -s unconfined_t -t passwd_exec_t -c file
+sesearch -A -s unconfined_t -t passwd_t -c process
+sesearch -A -s unconfined_t -t passwd_t -c process
+sesearch --type_trans -s unconfined_t -t passwd_exec_t
+history
+history -n 70 > history.txt
+cat history.txt 
+history 70
+history 70 > history.txt
